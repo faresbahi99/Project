@@ -1,0 +1,283 @@
+/* components/Admin/Admin.module.css */
+.keyManagement {
+  padding: 20px 0;
+}
+
+.keyTabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.keyTab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.keyTab:hover {
+  color: var(--primary);
+}
+
+.keyTab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.keysTable {
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr;
+  gap: 15px;
+  padding: 15px 20px;
+  background: #f8f9fa;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr;
+  gap: 15px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9ecef;
+  align-items: center;
+}
+
+.keyCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.keyCell code {
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+}
+
+.copyBtn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.copyBtn:hover {
+  color: var(--primary);
+}
+
+.typeBadge, .levelBadge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.typeBadge.permanent {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.typeBadge.temporary {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.levelBadge {
+  background: rgba(46, 134, 171, 0.1);
+  color: var(--primary);
+}
+
+.permissionsCell {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.permissionTag {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+.moreTag {
+  background: rgba(108, 117, 125, 0.2);
+  color: #6c757d;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+/* نموذج إنشاء المفاتيح */
+.generateKey {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.keyForm {
+  max-width: 500px;
+}
+
+.permissionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.permissionOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.permissionOption:hover {
+  border-color: var(--primary);
+}
+
+.permissionOption input {
+  margin: 0;
+}
+
+.generatedKey {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary);
+}
+
+.keyDisplay {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.keyDisplay code {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  flex: 1;
+  border: 1px solid #e9ecef;
+}
+
+.keyWarning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #fff3cd;
+  border-radius: 8px;
+  color: #856404;
+}
+
+.keyWarning i {
+  color: #ffc107;
+}
+
+/* المفاتيح الدائمة */
+.permanentKeysInfo {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.infoCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: #e7f3ff;
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+}
+
+.infoCard i {
+  color: var(--primary);
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.permanentKeyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+
+.keyHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.keyCode {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.superBadge {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.adminBadge {
+  background: rgba(46, 134, 171, 0.1);
+  color: var(--primary);
+}
+
+.keyPermissions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.statusActive {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.noKeys {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
